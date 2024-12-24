@@ -1,0 +1,99 @@
+:root {
+  --bg-color: #2c2c2c; /* Elegant dark gray background */
+  --text-color: #ffffff; /* White text for contrast */
+  --primary-color: #007bff; /* Primary color */
+  --hover-bg: rgba(26, 42, 59, 0.2); /* Light blue background on hover */
+  --navbar-shadow: rgba(253, 253, 253, 0.2); /* Shadow for navbar */
+  --glow-color: rgba(11, 173, 192, 0.5); /* Glow color for hover effect */
+  --navbar-scroll-bg: #012338; /* Darker background color when scrolling */
+}
+
+body {
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Set a default font */
+  background-color: var(--bg-color); /* Set body background color */
+  color: var(--text-color); /* Set body text color */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--bg-color); /* Set navbar background color */
+  color: var(--text-color); /* Set navbar text color */
+  box-shadow: 0 2px 4px var(--navbar-shadow); /* Add shadow */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-wrapper.scrolled {
+  background-color: var(--navbar-scroll-bg); /* Change background color when scrolled */
+}
+
+.custom-navbar {
+  padding: 10px 15px; /* Reduced padding for a smaller navbar */
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 40px; /* Reduced logo size */
+  height: 40px; /* Reduced logo size */
+  margin-right: 10px; /* Reduced margin for better spacing */
+  border-radius: 50%;
+}
+
+.brand-name {
+  font-weight: bold;
+  font-size: 1.3rem; /* Slightly reduced font size for better visibility */
+  color: var(--text-color); /* Ensure brand name is visible */
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+}
+
+.mode-toggle {
+  margin-right: 10px; /* Reduced margin for better spacing */
+  border: none;
+  background: transparent;
+  cursor: pointer; /* Change cursor to pointer */
+  color: var(--text-color); /* Ensure toggle button is visible */
+  font-size: 1rem; /* Slightly reduced font size for better visibility */
+}
+
+.nav-link {
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Added transform for scaling */
+  padding: 8px 12px; /* Reduced padding for better hover effect */
+  border-radius: 5px; /* Rounded corners for hover effect */
+  color: var(--text-color); /* Default text color */
+  margin: 0 5px; /* Add horizontal margin for spacing */
+}
+
+.nav-link:hover {
+  background-color: var(--hover-bg); /* Background color on hover */
+  color: var(--primary-color); /* Change text color on hover */
+  box-shadow: 0 0 10px var(--glow-color), 0 0 20px var(--glow-color); /* Glow effect */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+/* Additional styles for dropdown items */
+.nav-dropdown-item {
+  color: var(--text-color); /* Ensure dropdown items are visible */
+}
+
+.nav-dropdown-item:hover {
+  background-color: var(--hover-bg); /* Background color on hover for dropdown items */
+  color: var(--primary-color); /* Change text color on hover for dropdown items */
+}

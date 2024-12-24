@@ -1,0 +1,47 @@
+.container {
+    padding: 20px; /* Padding for the container */
+  }
+  
+  .menu-card {
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners for cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Transition for hover effect */
+    background-color: #3a3a3a; /* Default background color for cards */
+    height: 100%; /* Ensure all cards have the same height */
+  }
+  
+  .menu-card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+    background-color: #061656; /* Change background color on hover */
+  }
+  
+  .menu-title {
+    text-align: center; /* Center align the title */
+    font-size: 1.5rem; /* Font size for the title */
+    font-weight: bold; /* Make the title bold */
+    color: #ffffff; /* White color for the title */
+  }
+  
+  .price {
+    font-size: 1.2rem; /* Font size for the price */
+    font-weight: bold; /* Make the price bold */
+    color: #ffffff; /* White color for the price */
+    margin: 10px 0; /* Space around the price */
+  }
+  
+  .menu-description {
+    text-align: justify; /* Justify text */
+    color: #e0e0e0; /* Light gray color for description */
+    margin-bottom: 15px; /* Space below the description */
+  }
+  
+  h2 {
+    color: #ffffff; /* White color for headings */
+    margin-top: 30px; /* Add margin to the top of headings */
+    margin-bottom: 15px; /* Add margin to the bottom of headings */
+  }
+  
+  .text-muted {
+    color: #b0b0b0; /* Muted color for subtitles */
+  }

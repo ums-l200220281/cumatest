@@ -1,0 +1,38 @@
+.footer {
+    background-color: #343a40; /* Dark background for the footer */
+    color: #ffffff; /* White text for contrast */
+    padding: 40px 20px; /* Padding for the footer */
+    position: relative; /* Positioning for the footer */
+  }
+  
+  .footer-content {
+    margin-bottom: 20px; /* Space between sections */
+  }
+  
+  .footer h4 {
+    font-size: 1.5rem; /* Font size for section titles */
+    margin-bottom: 15px; /* Space below the title */
+    font-weight: bold; /* Bold titles */
+  }
+  
+  .contact-info p,
+  .social-media p {
+    margin: 5px 0; /* Space between paragraphs */
+  }
+  
+  .social-link {
+    color: #ffffff; /* White color for social links */
+    text-decoration: none; /* Remove underline */
+    margin-left: 10px; /* Space between icon and text */
+  }
+  
+  .social-link:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .footer-bottom {
+    text-align: center; /* Center align the copyright text */
+    margin-top: 20px; /* Space above the copyright text */
+    font-size: 0.9rem; /* Smaller font size for copyright */
+    color: #b0b0b0; /* Light gray color for copyright */
+  }
